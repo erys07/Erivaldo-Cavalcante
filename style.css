@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    border: 0;
+    background-color:rgb(18, 18, 19);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.navbar{
+    display: inline-block;
+    position: relative;
+    background-color: rgb(18, 18, 19);
+    color: white;
+    width: 100%;
+    border-bottom: 2px solid #363636;
+}
+.navbar-container{
+    width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 0;
+    float: right;
+    margin-right: 25vh;
+}
+.navbar-container li{
+    list-style: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+
+}
+.text{
+    color: rgb(196, 196, 196);
+    font-family: 'Figtree', sans-serif;
+    margin-top: 10%;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 110px;
+}
+h1{
+    color:  #00d2df;
+    font-size: 40px;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.animation{
+    animation: animation 1000ms infinite normal,
+     typing 3s steps(40) normal both;
+}
+@keyframes typing{
+    from{
+        width: 0;
+        
+    }
+    to{
+        width: 460px;
+    }
+}
+@keyframes animation{
+    from{
+        border-right-color: white;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+#butao{
+    margin-left: 9%;
+}
+.github{
+    margin-top: 26px;
+    width: 15%;
+    height: 8vh;
+    font-size: 23px;
+    margin-right: 5%;
+    background-color: rgb(18, 18, 19);
+    border: 3px solid purple;
+    border-radius: 10px;
+    color: rgb(196, 196, 196);
+    cursor: pointer;
+    box-shadow: 4px 4px 5px purple;
+}
+.github:hover{
+    border: 2px solid rgb(78, 0, 78);
+    background-color: rgb(19, 19, 19);
+    box-shadow: 3px 3px 5px purple;
+}
+.linkedin{
+    margin-top: 26px;
+    width: 15%;
+    height: 8vh;
+    font-size: 23px;
+    background-color: rgb(18, 18, 19);
+    border: 3px solid purple;
+    border-radius: 10px;
+    color: rgb(196, 196, 196);
+    cursor: pointer;
+    box-shadow: 4px 4px 5px purple;
+}
+.linkedin:hover{
+    border: 2px solid rgb(78, 0, 78);
+    background-color: rgb(19, 19, 19);
+    box-shadow: 3px 3px 5px purple;
+}
+#foto1{ display: none;}
+.checkbtn{
+    display: none;
+    float: right;
+}
+#check{
+    display: none;
+}
+#foto1{
+    width: 20%;
+    height: auto;
+    float: left;
+    display: flex;
+    margin-top: 60px;
+    margin-left: 200px;
+    background-color: rgb(24, 24, 24);
+    border-left: 5px solid purple;
+    opacity: 90%;
+}
+#foto:hover{
+    opacity: 100%;
+    border-left: 5px solid rgb(145, 1, 145);
+    background-color: rgb(27, 27, 27);
+}
+.sobremim{
+    background-color:rgb(21, 21, 21);
+    height: 70vh;
+    width: 100%;
+    margin-top: 10%;
+}
+#texto-sobre-mim{
+    color: rgb(196, 196, 196);
+    font-family: 'Figtree', sans-serif;
+    font-size: 20px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: relative;
+}
+@media (max-width: 900px) {
+    .navbar-container{
+        position: absolute;
+        display: block;
+        top: 8vh;
+        right: -145px;
+        width: 40vw;
+        height: 0vh;
+        background-color: rgb(28, 28, 29);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        visibility: hidden;
+        transition: 0.2s;
+        overflow-y: hidden;
+    }
+    .navbar-container li{
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 13px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    .checkbtn{
+        margin-right: 3vh;
+        color: #00d2df;
+        font-size: 30px;
+        display: block;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        cursor: pointer;
+    }
+    .text{
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 25vh;
+    }
+    h1{
+        font-size: 30px;
+        margin: 0 auto;
+        margin-bottom: 17px;
+    }
+    #butao{
+        margin-left: -40px;
+        display: flex;
+        margin-top: 5%;
+        margin-bottom: 170px;
+    }
+    .scroll{
+        color: blue;
+        text-align: center;
+        margin-bottom: -50px;
+        font-size: 15px;
+        font-family: 'Figtree', sans-serif;
+    }
+.github{
+    margin-left: 28%;
+    width: 22%;
+    height: 8vh;
+    font-size: 20px;
+    margin-right: 5%;
+    background-color: rgb(18, 18, 19);
+    border: 3px solid purple;
+    border-radius: 10px;
+    color: rgb(196, 196, 196);
+    cursor: pointer;}
+.linkedin{
+    width: 22%;
+    height: 8vh;
+    font-size: 20px;
+    background-color: rgb(18, 18, 19);
+    border: 3px solid purple;
+    border-radius: 10px;
+    color: rgb(196, 196, 196);
+    cursor: pointer;
+}
+.checkbox:checked ~ .navbar-container{
+    height: 22vh;
+    visibility: visible;
+    overflow-y: auto;
+}
+@keyframes typing{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 350px;
+    }
+}
+}
